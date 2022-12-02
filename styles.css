@@ -48,28 +48,18 @@ main { background: #DE6449;}
 footer { background: #694D75;}
 
 header{
-	grid-column:auto;
-	grid-template-columns: 1fr 1fr;
-	grid-column:1/4;
-}
-#logo{
-	grid-column:1/4;
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
 }
 body{
     display:grid;
     box-sizing: border-box;
-   /* grid-template-areas:
-    "header header header header"
-    ". main ."
-    "footer footer footer footer"*/
 	width:95%;
 	margin:0 auto;
 	grid-gap:10px;
 }
 
-header,footer{
-    grid-column:1/4;
-}
+
 .menu-toggle{
     overflow: hidden;
     background-color: #333;
